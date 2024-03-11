@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { Reset } from 'styled-reset';
+import GlobalState from './pages/GlobalState/GlobalState';
+import { RecoilRoot } from 'recoil';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // <RecoilRoot>
+  //   <GlobalState/>
+  // </RecoilRoot>
+  
   <BrowserRouter>
     <App />
   </BrowserRouter>
